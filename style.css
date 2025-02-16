@@ -4,6 +4,10 @@ body {
     font-family: 'Roboto';
 }
 
+.made {
+    display: block !important;
+}
+
 @font-face {
     font-family: 'Mac';
     src: url('./fonts/MAK.otf');
@@ -31,66 +35,69 @@ body {
 }
 
 .wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.text {
-  color: #b66c6e;
-  display: inline-block;
-  margin-left: 5px;
-}
-.bounceball {
-  position: relative;
-  display: inline-block;
-  height: 37px;
-  width: 15px;
-}
-.bounceball:before {
-  position: absolute;
-  content: '';
-  display: block;
-  top: 0;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #b66c6e;
-  transform-origin: 50%;
-  animation: bounceBall 1000ms alternate infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.page{
-opacity: 0;
+.text {
+    color: #b66c6e;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.bounceball {
+    position: relative;
+    display: inline-block;
+    height: 37px;
+    width: 15px;
+}
+
+.bounceball:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #b66c6e;
+    transform-origin: 50%;
+    animation: bounceBall 1000ms alternate infinite;
+}
+
+.page {
+    display: none;
 }
 
 @keyframes bounceBall {
-  0% {
-    top: 30px;
-    height: 5px;
-    border-radius: 60px 60px 20px 20px;
-    transform: scaleX(2);
-  }
-  35% {
-    height: 15px;
-    border-radius: 50%;
-    transform: scaleX(1);
-  }
-  100% {
-    top: 0;
-  }
+    0% {
+        top: 30px;
+        height: 5px;
+        border-radius: 60px 60px 20px 20px;
+        transform: scaleX(2);
+    }
+    35% {
+        height: 15px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+    100% {
+        top: 0;
+    }
 }
 
 
 /*---------- loader--------- */
-#loading{
+#loading {
     display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* ----------content---------- */
@@ -300,55 +307,55 @@ opacity: 0;
     letter-spacing: 1px;
 }
 
-@media(max-width: 1115px){
+@media (max-width: 1115px) {
     .second-block img {
         max-width: 250px;
         max-height: 333px;
     }
 
-    .cursor-title{
+    .cursor-title {
         font-size: 60px;
     }
 }
 
-@media(max-width: 1024px){
+@media (max-width: 1024px) {
     .cursor-title {
         font-size: 40px;
     }
 }
 
-@media(max-width: 1015px){
+@media (max-width: 1015px) {
     .second-block img {
         max-width: 200px;
     }
 
-    .second-column{
+    .second-column {
         margin-top: -80px;
     }
 
-    .small-text{
+    .small-text {
         width: 260px;
     }
 
-    .about-title{
+    .about-title {
         font-size: 175px;
     }
 
-    .fourth-block{
+    .fourth-block {
         padding: 0px 0 80px;
     }
 
-    .projects-title{
+    .projects-title {
         font-size: 125px;
     }
 
-    .quote{
+    .quote {
         margin-top: 80px;
     }
 }
 
-@media(max-width: 767px){
-    .about-title{
+@media (max-width: 767px) {
+    .about-title {
         font-size: 100px;
     }
 
@@ -360,7 +367,7 @@ opacity: 0;
         max-width: 150px;
     }
 
-    .second-block{
+    .second-block {
         font-size: 20px;
         padding: 50px 0;
     }
@@ -369,7 +376,7 @@ opacity: 0;
         width: 135px;
         font-size: 12px;
     }
-    
+
     .second-column {
         margin-top: -50px;
     }
@@ -378,7 +385,7 @@ opacity: 0;
         padding-top: 20px;
     }
 
-    .third-block{
+    .third-block {
         padding: 50px 0;
     }
 
@@ -386,15 +393,15 @@ opacity: 0;
         max-width: 300px;
     }
 
-    .about-title{
+    .about-title {
         top: 210px;
     }
 
-    .about{
+    .about {
         font-size: 16px;
     }
 
-    .quote{
+    .quote {
         font-size: 26px;
         margin-top: 50px;
     }
@@ -404,12 +411,12 @@ opacity: 0;
         margin-bottom: 30px;
     }
 
-    .footer{
+    .footer {
         padding-bottom: 50px;
     }
 }
 
-@media(max-width: 424px){
+@media (max-width: 424px) {
     .cursor-title {
         font-size: 30px;
         width: 90%;
@@ -429,7 +436,7 @@ opacity: 0;
         font-size: 10px;
     }
 
-    .header p{
+    .header p {
         margin: 0px 10px;
         font-size: 14px;
     }
@@ -454,14 +461,14 @@ opacity: 0;
         font-size: 40px;
         margin-bottom: 20px;
     }
-    
-    .quote{
+
+    .quote {
         font-size: 18px;
     }
 
     .made {
         font-size: 14px;
     }
-    
-    
+
 }
+
