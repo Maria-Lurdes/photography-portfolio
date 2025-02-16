@@ -50,7 +50,13 @@ function onReady(callback) {
 
 function setVisible(selector, visible) {
     setTimeout(() => {
-        document.querySelector(selector).style.display = visible ? 'block' : 'none';
+        if (selector === "#loading") {
+            document.querySelector(selector).style.display = visible ? 'block' : 'none';
+        } else {
+            document.querySelector(selector).style.opacity = visible ? '1' : '0';
+            document.querySelector(selector).style.height = visible ? 'auto' : '100vh';
+            document.querySelector(selector).style.overflow = 'auto';
+        }
     }, 3000);
 }
 
